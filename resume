@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sonam Kesharwani | Resume</title>
+
+    <link rel="stylesheet" href="ss1.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <!-- LEFT SIDE -->
+        <aside class="left">
+
+            <div class="profile">
+                <div class="profile-icon">
+                    <img src="" alt="">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <h1>Sonam<br>Kesharwani</h1>
+                <p>Web Developer</p>
+            </div>
+
+            <!-- CONTACT -->
+            <section>
+                <h2>CONTACT</h2>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>6394610673</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>sonamkesharwani178@gmail.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Chitrakoot, Uttar Pradesh</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>linkedin.com/in/sonam</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>github.com/sonam</span>
+                </div>
+            </section>
+
+
+            <!-- SKILLS -->
+            <section>
+                <h2>TECHNICAL SKILLS</h2>
+
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>C</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>OOP Concepts</li>
+                </ul>
+            </section>
+
+
+            <!-- SOFT SKILLS -->
+            <section>
+                <h2>SOFT SKILLS</h2>
+
+                <ul class="skills">
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Teamwork</li>
+                    <li>Quick Learning</li>
+                    <li>Time Management</li>
+                </ul>
+            </section>
+
+        </aside>
+
+
+        <!-- RIGHT SIDE -->
+        <main class="right">
+
+            <!-- OBJECTIVE -->
+            <section class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-user-tie"></i>
+                    Career Objective
+                </h2>
+
+                <p>
+                    Motivated and hardworking BCA graduate looking for an
+                    opportunity as a Web Developer or Software Developer.
+                    I want to use my programming and web development skills
+                    to build useful applications and grow professionally
+                    in the IT industry.
+                </p>
+
+            </section>
+
+
+            <!-- EDUCATION -->
+            <section class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Education
+                </h2>
+
+                <div class="education-item">
+
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+
+                    <p class="institute">
+                        Sadguru Institute of Computer Study
+                    </p>
+
+                    <p class="date">
+                        Completed
+                    </p>
+
+                </div>
+
+                <div class="education-item">
+
+                    <h3>12th</h3>
+
+                    <p class="institute">
+                        [School Name]
+                    </p>
+
+                    <p class="date">
+                        [Passing Year]
+                    </p>
+
+                </div>
+
+                <div class="education-item">
+
+                    <h3>10th</h3>
+
+                    <p class="institute">
+                        [School Name]
+                    </p>
+
+                    <p class="date">
+                        [Passing Year]
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- INTERNSHIP -->
+            <section class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Internship / Training
+                </h2>
+
+                <div class="experience">
+
+                    <h3>Web Development / Software Development Intern</h3>
+
+                    <p class="company">
+                        [Company / Institute Name]
+                    </p>
+
+                    <ul>
+                        <li>
+                            Practiced programming and web development concepts.
+                        </li>
+
+                        <li>
+                            Worked with HTML, CSS, Bootstrap and database concepts.
+                        </li>
+
+                        <li>
+                            Improved programming and problem-solving skills.
+                        </li>
+
+                        <li>
+                            Developed practical projects during training.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECTS -->
+            <section class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-code"></i>
+                    Projects
+                </h2>
+
+
+                <div class="project">
+
+                    <h3>01. Personal Portfolio Website</h3>
+
+                    <p>
+                        <strong>Technologies:</strong>
+                        HTML, CSS, Bootstrap, JavaScript
+                    </p>
+
+                    <p>
+                        Created a responsive personal portfolio website
+                        containing About, Skills, Projects and Contact sections.
+                    </p>
+
+                </div>
+
+
+                <div class="project">
+
+                    <h3>02. Library Management System</h3>
+
+                    <p>
+                        <strong>Technologies:</strong>
+                        HTML, CSS, C# / MySQL
+                    </p>
+
+                    <p>
+                        Created a basic library management project for
+                        managing books and related records.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- CERTIFICATIONS -->
+            <section class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-certificate"></i>
+                    Certifications
+                </h2>
+
+                <ul class="certifications">
+
+                    <li>[Certificate Name] - [Organization]</li>
+
+                    <li>[Certificate Name] - [Organization]</li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- DECLARATION -->
+            <section class="content-section declaration">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-file-signature"></i>
+                    Declaration
+                </h2>
+
+                <p>
+                    I hereby declare that the information provided above
+                    is true and correct to the best of my knowledge.
+                </p>
+
+                <div class="signature">
+
+                    <p>
+                        <strong>Sonam Kesharwani</strong>
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

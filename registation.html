@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Registration Page</title>
+
+<style>
+
+/* ================= GENERAL ================= */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body
+{
+    background: white;
+}
+
+
+/* ================= HEADER ================= */
+
+header
+{
+    height: 145px;
+    width: 100%;
+    
+}
+
+#head
+{
+    width: 100%;
+    height: 95px;
+    background-color: #0B1F3A;
+    display: flex;
+    align-items: center;
+    
+}
+
+#img
+{
+    padding-left: 40px;
+    padding-top: 3px;
+}
+
+#inp
+{
+    margin-top: 0;
+    margin-left: 95px;
+    display: flex;
+    align-items: center;
+}
+
+#inp input
+{
+    height: 44px;
+    width: 360px;
+    padding-left: 18px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px 0 0 7px;
+}
+
+#inp select
+{
+    height: 44px;
+    width: 120px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+#se
+{
+    height: 44px;
+    width: 100px;
+    background-color: #FF7A00;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    padding-top: 11px;
+    border-radius: 0 7px 7px 0;
+}
+
+#log
+{
+    margin-left: 130px;
+}
+
+#log a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 17.5px;
+}
+
+#cart
+{
+    margin-left: 50px;
+    display: flex;
+}
+
+.to
+{
+    height: 45px;
+    width: 36px;
+    border-left: 1px solid white;
+    opacity: 0.5;
+}
+
+#cart a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 17.5px;
+    margin-left: 20px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+#nav
+{
+    height: 50px;
+    width: 100%;
+    background-color: #0B1F3A;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+#anchor
+{
+    margin-left: 32px;
+    padding-top: 14px;
+}
+
+#anchor a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+
+/* ================= FORM SECTION ================= */
+
+#form
+{
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+    margin: 100px;
+   
+
+}
+
+
+/* IMAGE */
+
+#image
+{
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image img
+{
+    width: 200px;
+    height: 300px;
+}
+
+
+/* REGISTRATION AREA */
+
+#registaion
+{
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* FIELDSET */
+
+fieldset
+{
+    width: 650px;
+    max-width: 100%;
+
+    padding: 25px;
+
+    border: 1px solid gray;
+    border-radius: 8px;
+
+    background-color: white;
+
+    box-shadow: 0px 0px 10px gray;
+
+    box-sizing: border-box;
+}
+
+
+/* HEADING */
+
+h2
+{
+    text-align: center;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+
+/* FORM GROUP */
+
+.form-group
+{
+    margin-bottom: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* LABEL */
+
+.form-group > label
+{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+
+/* ROW */
+
+.row
+{
+    display: flex;
+    gap: 15px;
+}
+
+.row .form-group
+{
+    flex: 1;
+}
+
+
+/* INPUT */
+
+#registaion input[type="text"],
+#registaion input[type="email"],
+#registaion input[type="tel"],
+#registaion input[type="password"],
+#registaion input[type="date"],
+#registaion textarea
+{
+    width: 100%;
+
+    padding: 8px;
+
+    border: 2px solid black;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+}
+
+
+/* GENDER */
+
+.gender-group
+{
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 15px;
+
+    align-items: center;
+}
+
+.gender-group label
+{
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-weight: normal;
+}
+
+
+/* CHECKBOX */
+
+#registaion input[type="checkbox"]
+{
+    width: auto;
+}
+
+
+/* BUTTONS */
+
+.btn-group
+{
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.btn
+{
+    flex: 1;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+.register
+{
+    background: blue;
+}
+
+.reset
+{
+    background: black;
+    color: white;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer
+{
+    height: 290px;
+
+    width: 100%;
+
+    background-color: #0B1F3A;
+}
+
+#last-dv
+{
+    display: flex;
+}
+
+
+/* FIRST */
+
+#first-dv
+{
+    padding-top: 35px;
+
+    margin-left: 55px;
+}
+
+#first-dv p
+{
+    font-size: 17px;
+
+    color: white;
+}
+
+
+/* SECOND */
+
+#second-dv
+{
+    margin-top: 60px;
+}
+
+#second-dv p
+{
+    color: white;
+
+    margin-left: 55px;
+}
+
+
+/* THIRD */
+
+#third-dv
+{
+    color: white;
+
+    margin-top: 60px;
+}
+
+#third-dv p
+{
+    color: white;
+
+    margin-left: 55px;
+}
+
+
+/* FOURTH */
+
+#fourth-dv
+{
+    margin-top: 60px;
+}
+
+#fourth-dv p
+{
+    color: white;
+
+    margin-left: 55px;
+}
+
+
+/* FIFTH */
+
+#fifth-dv
+{
+    margin-top: 60px;
+}
+
+#fifth-dv p
+{
+    color: white;
+
+    margin-left: 28px;
+}
+
+
+/* FOOTER LINES */
+
+#f
+{
+    height: 185px;
+
+    width: 10px;
+
+    border-right: 1px solid rgba(255,255,255,0.5);
+
+    margin-left: 50px;
+
+    margin-top: 56px;
+}
+
+#h
+{
+    height: 185px;
+
+    width: 10px;
+
+    border-right: 1px solid rgba(255,255,255,0.5);
+
+    margin-left: 70px;
+
+    margin-top: 56px;
+}
+
+#g
+{
+    height: 185px;
+
+    width: 10px;
+
+    border-right: 1px solid rgba(255,255,255,0.5);
+
+    margin-left: 70px;
+
+    margin-top: 56px;
+}
+
+#i
+{
+    height: 185px;
+
+    width: 10px;
+
+    border-right: 1px solid rgba(255,255,255,0.5);
+
+    margin-left: 45px;
+
+    margin-top: 56px;
+}
+
+
+/* COPYRIGHT */
+
+#end
+{
+    height: 50px;
+
+    width: 100%;
+
+    background-color: #0B1F3A;
+
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div id="head">
+
+        <div id="img">
+
+            <img
+                src="imageofcart/newlogo.png"
+                alt="logo"
+                height="90px"
+                width="266px"
+            >
+
+        </div>
+
+
+        <div id="inp">
+
+            <input
+                type="text"
+                placeholder="Search For Products, Brands And More..."
+            >
+
+            <select>
+
+                <option>
+                    All Categories
+                </option>
+
+                <option>
+                    Mens Wear
+                </option>
+
+            </select>
+
+            <div id="se">
+                Search
+            </div>
+
+        </div>
+
+
+        <div id="log">
+
+            <a href="#">
+                Login / Register
+            </a>
+
+            <br>
+
+            <a href="#" style="font-size:16.5px;">
+                My Account &#9662;
+            </a>
+
+        </div>
+
+
+        <div id="cart">
+
+            <div class="to"></div>
+
+            <a href="#">
+
+                My Cart
+
+                <br>
+
+                <span style="font-size:16.5px;">
+                    0 Items
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <div id="nav">
+
+            <div id="anchor">
+
+                <a href="#">
+                    Home
+                </a>
+
+                <a href="#">
+                    Products
+                </a>
+
+                <a href="#">
+                    Categories
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= REGISTRATION ================= -->
+
+<main id="form">
+
+
+    <!-- IMAGE -->
+
+    <div id="image">
+
+        <img
+            src="imageofcart/cartbag.jpeg"
+            alt="Shopping"
+        >
+
+    </div>
+
+
+    <!-- FORM -->
+
+    <div id="registaion">
+
+        <fieldset>
+
+            <h2>
+                Registration Form
+            </h2>
+
+
+            <form>
+
+
+                <!-- FULL NAME + ADDRESS -->
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Address
+                        </label>
+
+                        <textarea rows="2"></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL + CITY -->
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            City
+                        </label>
+
+                        <input type="text">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MOBILE + STATE -->
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            State
+                        </label>
+
+                        <input type="text">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PASSWORD + PINCODE -->
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Pincode
+                        </label>
+
+                        <input type="text">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONFIRM PASSWORD + DOB -->
+
+                <div class="row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Date of Birth
+                        </label>
+
+                        <input type="date">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GENDER -->
+
+                <div class="form-group">
+
+                    <label>
+                        Gender
+                    </label>
+
+
+                    <div class="gender-group">
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="gender"
+                            >
+
+                            Male
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="gender"
+                            >
+
+                            Female
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="gender"
+                            >
+
+                            Other
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TERMS -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            required
+                        >
+
+                        I agree to Terms & Conditions
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- BUTTONS -->
+
+                <div class="btn-group">
+
+                    <button
+                        type="submit"
+                        class="btn register"
+                    >
+                        Register
+                    </button>
+
+
+                    <button
+                        type="reset"
+                        class="btn reset"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </fieldset>
+
+    </div>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div id="last-dv">
+
+
+        <div id="first-dv">
+
+            <img
+                src="logoalag.png"
+                alt="logo"
+                height="80px"
+                width="250px"
+            >
+
+            <p
+                style="padding-bottom:25px;
+                       margin-top:-12px;
+                       margin-left:85px;
+                       font-size:16px;"
+            >
+                Shop Smart. Live Better.
+            </p>
+
+            <p>
+                ShopEase is your one-stop destination
+            </p>
+
+            <p style="margin-top:8px;">
+                For quality products at the best prices.
+            </p>
+
+            <p style="margin-top:8px;">
+                Happy Shopping!
+            </p>
+
+        </div>
+
+
+        <div id="f"></div>
+
+
+        <div id="second-dv">
+
+            <p style="font-size:18.5px;">
+                Quick Links
+            </p>
+
+            <p style="font-size:17px; padding-top:13px;">
+                Home
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Products
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Categories
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                About Us
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Contact Us
+            </p>
+
+        </div>
+
+
+        <div id="h"></div>
+
+
+        <div id="third-dv">
+
+            <p style="font-size:18.5px;">
+                Customer Service
+            </p>
+
+            <p style="font-size:17px; padding-top:13px;">
+                Login
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Register
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                My Cart
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Track Order
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Help & Support
+            </p>
+
+        </div>
+
+
+        <div id="g"></div>
+
+
+        <div id="fourth-dv">
+
+            <p style="font-size:18.5px;">
+                Information
+            </p>
+
+            <p style="font-size:17px; padding-top:13px;">
+                Privacy Policy
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Terms & Condition
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Shipping Policy
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                Return Policy
+            </p>
+
+            <p style="font-size:17px; padding-top:8px;">
+                FAQ
+            </p>
+
+        </div>
+
+
+        <div id="i"></div>
+
+
+        <div id="fifth-dv">
+
+            <p style="font-size:18.5px;">
+                Contact Us
+            </p>
+
+            <p style="font-size:16px; padding-top:12px;">
+                ShopEase Technologies Pvt.Ltd.
+            </p>
+
+            <p style="padding-top:5px; padding-left:25px;">
+                24, Digtal Avenue, Connaught Place
+            </p>
+
+            <p style="padding-top:5px; padding-left:25px;">
+                New Delhi - 110001, India
+            </p>
+
+            <p style="padding-top:14px;">
+                +91 9876543210
+            </p>
+
+            <p style="padding-top:8px;">
+                support@shopease.example
+            </p>
+
+            <p style="padding-top:8px;">
+                Mon - Sat: 10.00 AM - 7.00 PM
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="end">
+
+        <div
+            style="color:white;
+                   font-size:14px;
+                   padding-left:40px;
+                   padding-top:15px;"
+        >
+
+            &copy; 2026 ShopEase Technologies Pvt.Ltd.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

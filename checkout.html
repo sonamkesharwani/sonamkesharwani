@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+    <title>Checkout - My First Webpage</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         YOUR HEADER
+    ====================================================== -->
+
+    <header>
+
+        <div id="head">
+
+
+            <div id="img">
+
+                <img
+                    src="logoalag.png"
+                    alt="logo"
+                    height="90px"
+                    width="266px"
+                />
+
+            </div>
+
+
+            <div id="inp" style="margin-left: 120px; ">
+
+                <input
+                    type="text"
+                    name="text"
+                    placeholder="Search For Products, Brands And More..."/>
+
+                <select>
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="men">
+                        Mens Wear
+                    </option>
+
+                </select>
+
+                <div id="se">
+                    Search
+                </div>
+
+            </div>
+
+
+            <div id="log" style="margin-right: 90px;">
+
+                <a href="login.html">
+
+                    <i
+                        class="fa-regular fa-user"
+                        style="width: 18px;"
+                    ></i>
+
+                    &nbsp;&nbsp;Login / Register
+
+                </a>
+
+                <br>
+
+                <a
+                    href="login.html"
+                    style="padding-top: 15px; font-size: 16.5px;"
+                >
+
+                    My Account&nbsp;&#9662;
+
+                </a>
+
+            </div>
+
+
+            <div id="cart" style="margin-right: 95px;">
+
+                <div class="to" style="margin-right: 50px;"></div>
+
+                <a href="cart.html">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    &nbsp;&nbsp;My Cart
+
+                    <br>
+
+                    <span style="font-size: 16.5px;">
+                        &nbsp;0 Items
+                    </span>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <nav>
+
+            <div id="nav">
+
+                <div id="anchor">
+
+                    <a
+                        href="index.htm"
+                        class="ho-bo"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="Product.html"
+                        class="sec-bo"
+                    >
+                        Products
+                    </a>
+
+                    <!-- <a
+                        href="www.cat"
+                        class="th-bo"
+                    >
+                        Categories
+                    </a> -->
+
+                    <a
+                        href="about.html.html"
+                        class="fou-th"
+                    >
+                        About Us
+                    </a>
+
+                    <a
+                        href="contactus.html"
+                        class="fif-bo"
+                    >
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CHECKOUT PAGE
+    ====================================================== -->
+
+    <main class="checkout-container">
+
+
+        <h1 class="checkout-title">
+            Checkout
+        </h1>
+
+
+        <div class="checkout-layout">
+
+
+            <!-- =================================================
+                 LEFT SIDE
+            ================================================== -->
+
+            <div class="checkout-left">
+
+
+                <!-- CUSTOMER INFORMATION -->
+
+                <section class="checkout-card">
+
+                    <h2>
+                        Contact Information
+                    </h2>
+
+
+                    <div class="checkout-form-row">
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter first name"
+                            >
+
+                        </div>
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter last name"
+                            >
+
+                        </div>
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                placeholder="example@gmail.com"
+                            >
+
+                        </div>
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                placeholder="Enter phone number"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- DELIVERY ADDRESS -->
+
+                <section class="checkout-card">
+
+                    <h2>
+                        Delivery Address
+                    </h2>
+
+
+                    <div class="checkout-form-row">
+
+
+                        <div class="checkout-field checkout-full">
+
+                            <label>
+                                Address
+                            </label>
+
+                            <textarea
+                                placeholder="House No., Street, Area"
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter city"
+                            >
+
+                        </div>
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                State
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    Select State
+                                </option>
+
+                                <option>
+                                    Delhi
+                                </option>
+
+                                <option>
+                                    Haryana
+                                </option>
+
+                                <option>
+                                    Maharashtra
+                                </option>
+
+                                <option>
+                                    Karnataka
+                                </option>
+
+                                <option>
+                                    Uttar Pradesh
+                                </option>
+
+                                <option>
+                                    Rajasthan
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                PIN Code
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="6 digit PIN code"
+                                maxlength="6"
+                            >
+
+                        </div>
+
+
+                        <div class="checkout-field">
+
+                            <label>
+                                Country
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    India
+                                </option>
+
+                                <option>
+                                    United States
+                                </option>
+
+                                <option>
+                                    United Kingdom
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- PAYMENT -->
+
+                <section class="checkout-card">
+
+                    <h2>
+                        Payment Method
+                    </h2>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            checked
+                        >
+
+                        <div>
+
+                            <strong>
+                                Credit / Debit Card
+                            </strong>
+
+                            <small>
+                                Visa, Mastercard, RuPay and more
+                            </small>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                        >
+
+                        <div>
+
+                            <strong>
+                                UPI
+                            </strong>
+
+                            <small>
+                                Google Pay, PhonePe, Paytm and more
+                            </small>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                        >
+
+                        <div>
+
+                            <strong>
+                                Cash on Delivery
+                            </strong>
+
+                            <small>
+                                Pay when your order arrives
+                            </small>
+
+                        </div>
+
+                    </label>
+
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RIGHT SIDE
+            ================================================== -->
+
+            <aside class="order-summary">
+
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+
+                <!-- MACBOOK -->
+
+                <div class="checkout-product">
+
+                    <img
+                        src="imageofcart/laptop.png"
+                        alt="laptop"
+                    >
+
+
+                    <div class="checkout-product-info">
+
+                        <h3>
+                            MacBook Air M2 Chip
+                        </h3>
+
+                        <p>
+                            13-inch, 8GB RAM, 256GB SSD
+                        </p>
+
+                        <span>
+                            Qty: 1
+                        </span>
+
+                    </div>
+
+
+                    <strong>
+                        ₹89,990
+                    </strong>
+
+                </div>
+
+
+
+                <!-- SONY -->
+
+                <div class="checkout-product">
+
+                    <img
+                        src="imageofcart/headphone.jpeg"
+                        alt="Sony WH-1000XM5"
+                    >
+
+
+                    <div class="checkout-product-info">
+
+                        <h3>
+                            Sony WH-1000XM5
+                        </h3>
+
+                        <p>
+                            Wireless Noise Cancelling Headphones
+                        </p>
+
+                        <span>
+                            Qty: 1
+                        </span>
+
+                    </div>
+
+
+                    <strong>
+                        ₹24,990
+                    </strong>
+
+                </div>
+
+
+
+                <!-- COUPON -->
+
+                <div class="coupon-box">
+
+                    <input
+                        type="text"
+                        placeholder="Coupon Code"
+                    >
+
+                    <button>
+                        Apply
+                    </button>
+
+                </div>
+
+
+
+                <!-- PRICE -->
+
+                <div class="summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong>
+                        ₹114,980
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Discount
+                    </span>
+
+                    <strong class="discount">
+                        -₹3,000
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Shipping
+                    </span>
+
+                    <strong class="free">
+                        FREE
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong>
+                        ₹111,980
+                    </strong>
+
+                </div>
+
+
+
+                <button class="place-order">
+                    Place Order
+                </button>
+
+
+                <p class="secure-payment">
+                    <i class="fa-solid fa-lock"></i>
+                    Secure and encrypted payment
+                </p>
+
+
+            </aside>
+
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

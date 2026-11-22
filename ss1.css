@@ -1,0 +1,296 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9ecef;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   RESUME
+========================= */
+
+.resume {
+    width: 900px;
+    max-width: 95%;
+    margin: 30px auto;
+    background: white;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left {
+    background: #172033;
+    color: white;
+    padding: 35px 25px;
+}
+
+
+/* PROFILE */
+
+.profile {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    background: white;
+    color: #172033;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.profile h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.profile p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #d9dee8;
+}
+
+
+/* LEFT HEADINGS */
+
+.left section {
+    margin-bottom: 30px;
+}
+
+.left h2 {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* CONTACT */
+
+.contact-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 13px;
+    font-size: 13px;
+    word-break: break-word;
+}
+
+.contact-item i {
+    width: 18px;
+    margin-top: 4px;
+}
+
+
+/* SKILLS */
+
+.skills {
+    list-style: none;
+}
+
+.skills li {
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+.skills li::before {
+    content: "•";
+    margin-right: 10px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right {
+    padding: 35px 40px;
+}
+
+
+/* SECTION */
+
+.content-section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    color: #172033;
+
+    border-bottom: 2px solid #172033;
+    padding-bottom: 7px;
+    margin-bottom: 14px;
+}
+
+.section-title i {
+    font-size: 18px;
+}
+
+
+/* TEXT */
+
+.content-section > p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/* EDUCATION */
+
+.education-item {
+    margin-bottom: 18px;
+    padding-left: 15px;
+    border-left: 3px solid #172033;
+}
+
+.education-item h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.institute {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* EXPERIENCE */
+
+.experience h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.company {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.experience ul {
+    padding-left: 20px;
+}
+
+.experience li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+/* PROJECTS */
+
+.project {
+    margin-bottom: 18px;
+}
+
+.project h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+
+/* CERTIFICATIONS */
+
+.certifications {
+    padding-left: 20px;
+}
+
+.certifications li {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+
+/* DECLARATION */
+
+.declaration {
+    margin-bottom: 0;
+}
+
+.signature {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 700px) {
+
+    .resume {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .left {
+        padding: 30px 25px;
+    }
+
+    .right {
+        padding: 30px 25px;
+    }
+
+}
+
+
+/* =========================
+   PRINT / PDF
+========================= */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .resume {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }

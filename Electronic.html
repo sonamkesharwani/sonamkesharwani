@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #F5F7FA;
+            font-family: Arial, sans-serif;
+        }
+    
+
+        #Container{
+            width: 100%;
+            min-height: 1500px;
+        }
+
+        /* HEADER */
+
+        #header{
+            height: 60px;
+            width: 100%;
+            background-color: #F5F7FA;
+
+            display: flex;
+            align-items: center;
+
+            padding-left: 30px;
+        }
+
+        #header p{
+            display: inline;
+            margin-right: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        #header p:last-child{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        /* MAIN */
+
+        #main{
+            width: 100%;
+            min-height: 1350px;
+
+            display: flex;
+            gap: 20px;
+
+            padding: 0 25px;
+        }
+
+
+        /* LEFT SIDE */
+
+        #leftbox{
+            width: 25%;
+            margin-top: 25px;
+        }
+
+        #left hr{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #left{
+            width: 100%;
+            min-height: 1250px;
+
+            background-color: white;
+
+            padding: 20px;
+
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+            border-radius: 10px;
+        }
+
+        #left h3{
+            margin-bottom: 20px;
+        }
+
+        #left h4{
+            margin-bottom: 15px;
+        }
+
+
+        /* CATEGORY */
+
+        .category{
+            margin: 15px 0;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+        }
+
+        .category input{
+            width: 17px;
+            height: 17px;
+
+            margin-right: 8px;
+
+            appearance: none;
+
+            border: 2px solid gray;
+            border-radius: 3px;
+
+            vertical-align: middle;
+
+            cursor: pointer;
+        }
+
+        .category input:checked{
+            background-color: blue;
+            border-color: blue;
+        }
+
+
+        /* RIGHT SIDE */
+
+        #rightbox{
+            width: 75%;
+            min-height: 1250px;
+        }
+
+
+        #heading{
+            height: 70px;
+            width: 100%;
+        }
+
+        #heading h1{
+            font-family: Arial, sans-serif;
+            padding-top: 5px;
+        }
+
+        #heading p{
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+        }
+
+
+        /* PRODUCT AREA */
+
+        #right{
+            width: 100%;
+            min-height: 1200px;
+            margin-top: 10px;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 10px;
+        }
+
+
+        /* PRODUCT */
+
+        .Products{
+            width: 100%;
+            min-height: 400px;
+
+            background-color: white;
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+            transition: 0.3s;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .Products:hover{
+            transform: translateY(-5px);
+        }
+
+
+        /* DISCOUNT */
+
+        .btn{
+            height: 30px;
+            width: 100px;
+
+            border: none;
+            border-radius: 7px;
+
+            background-color: green;
+            color: white;
+
+            cursor: pointer;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+
+        /* IMAGE */
+
+        .Products img{
+            width: 100%;
+            height: 200px;
+
+            object-fit: contain;
+
+            margin-top: 10px;
+        }
+
+
+        /* PRODUCT HEADING */
+
+        .Products h2{
+            margin-top: 10px;
+            font-size: 21px;
+            color: black;
+        }
+
+        .Products h3{
+            margin-top: 5px;
+            color: orange;
+        }
+
+        .Ranking{
+            display: inline;
+            color: orange;
+        }
+
+        .emptyStar{
+            color: white;
+            -webkit-text-stroke: 1.5px orange;
+        }
+
+
+        /* PRICE */
+
+        .price{
+            margin-top: 10px;
+            font-size: 24px;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .price del{
+            font-size: 14px;
+            color: gray;
+        }
+
+
+        /* CART BUTTON */
+
+        .cart{
+            width: 90%;
+            height: 45px;
+
+            display: block;
+
+            margin: 25px auto 0;
+
+            border: none;
+            border-radius: 8px;
+
+            background-color: blue;
+            color: white;
+
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .cart:hover{
+            background-color: darkblue;
+            transform: scale(1.05);
+        }
+
+
+        /* FILTER BUTTON */
+
+        .fbtn{
+            height: 45px;
+            width: 100%;
+
+            padding: 0 20px;
+
+            border: 1px solid gray;
+
+            border-radius: 8px;
+
+            background-color: white;
+
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+            margin-top: 10px;
+            margin-left: 0;
+        }
+
+        .fbtn:hover{
+            background-color: #243B55;
+            color: white;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* BOTTOM */
+
+        .bottom{
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 15px;
+
+            margin: 20px;
+        }
+
+        .bottom button{
+            height: 50px;
+
+            padding: 0 20px;
+
+            border: 1px solid gray;
+
+            border-radius: 8px;
+
+            background-color: white;
+
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .bottom button:hover{
+            background-color: #243B55;
+            color: white;
+
+            transform: translateY(-3px);
+        }
+
+        .bottom #one{
+            background-color: blue;
+            color: white;
+        }
+
+        .bottom #one:hover{
+            background-color: orange !important;
+            color: white;
+        }
+
+
+      
+
+    </style>
+</head>
+
+<body>
+
+<div id="Container">
+    
+
+  
+  
+    <!--main header -->
+
+    <div id="header">
+
+        <p>Home</p>
+        <p>></p>
+
+        <p style="font-weight: bold; font-size: 20px;">
+            Electronics
+        </p>
+
+    </div>
+
+
+    <!-- MAIN -->
+
+    <div id="main">
+
+
+        <!-- LEFT SIDE -->
+
+        <div id="leftbox">
+
+            <div id="left">
+
+                <h3>Filter By</h3>
+                <hr>
+
+                <h4>Categories</h4>
+
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Smartphones
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Laptops
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Tablets
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Headphones
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Smart Watches
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Bluetooth Speakers
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Computer Accessories
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Keyboards
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Computer Mouse
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Power Banks
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="cat">
+                    Cameras
+                </div>
+
+
+                <hr>
+
+
+                <h4>Price Range</h4>
+
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    Under ₹1,000
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    ₹1,000-₹2,000
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    ₹2,000-₹5,000
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    ₹5,000-₹10,000
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    ₹10,000-₹15,000
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    ₹15,000-₹20,000
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    ₹20,000-₹25,000
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="price">
+                    Above ₹25,000
+                </div>
+
+
+                <hr>
+
+
+                <h4>Rating</h4>
+
+
+                <div class="category">
+                    <input type="radio" name="other">
+                    <h3 class="Ranking">★★★★★</h3> (4 & up)
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="other">
+                    <h3 class="Ranking">★★★★<span class="emptyStar">★</span></h3> (3 & up)
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="other">
+                    <h3 class="Ranking">★★★<span class="emptyStar">★★</span></h3> (2 & up)
+                </div>
+
+                <div class="category">
+                    <input type="radio" name="other">
+                    <h3 class="Ranking">★★<span class="emptyStar">★★★</span></h3> (1 & up)
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div>
+
+                    <button class="fbtn"
+                        style="background-color: blue; color: white; margin-top: 30px;">
+                        Apply Filters
+                    </button>
+
+                    <button class="fbtn" style="margin-top: 20px;">
+                        Clear Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div id="rightbox">
+
+            <div id="heading">
+
+                <h1>All Electronics</h1>
+
+                <p>
+                    Showing 1-12 of 12 results
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <div id="right">
+
+
+                <!-- 1 -->
+
+                <div class="Products">
+
+                    <button class="btn">
+                        20% OFF
+                    </button>
+
+                    <img src="image/i1.jpeg">
+
+                    <h2> Headphones
+                        <a href="book.html">l</a>
+                    </h2>
+
+                    <h3>★★★★★ (128)</h3>
+
+                    <div class="price">
+                        ₹1,999
+                        <del>₹2,499</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 2 -->
+
+                <div class="Products">
+
+                    <button class="btn">
+                        25% OFF
+                    </button>
+
+                    <img src="image/e1.jfif">
+
+                    <h2>Smartphone</h2>
+
+                    <h3>★★★★☆ (116)</h3>
+
+                    <div class="price">
+                        ₹71,250
+                        <del>₹95,000</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 3 -->
+
+                <div class="Products">
+
+                    <button class="btn">
+                        30% OFF
+                    </button>
+
+                    <img src="image/e4.jfif">
+
+                    <h2>Gaming Laptop</h2>
+
+                    <h3>★★★★★ (94)</h3>
+
+                    <div class="price">
+                        ₹54,999
+                        <del>₹78,999</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 4 -->
+
+                <div class="Products">
+
+                    <button class="btn orange">
+                        35% OFF
+                    </button>
+
+                    <img src="image/e11.jfif">
+
+                    <h2>Smart Watch</h2>
+
+                    <h3>★★★☆☆ (67)</h3>
+
+                    <div class="price">
+                        ₹2,599
+                        <del>₹3,999</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 5 -->
+
+                <div class="Products">
+
+                    <button class="btn">
+                        20% OFF
+                    </button>
+
+                    <img src="image/e7.jfif">
+
+                    <h2>Bluetooth Speaker</h2>
+
+                    <h3>★★★★☆ (103)</h3>
+
+                    <div class="price">
+                        ₹1,799
+                        <del>₹2,299</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 6 -->
+
+                <div class="Products">
+
+                    <button class="btn orange">
+                        40% OFF
+                    </button>
+
+                    <img src="image/e9.jfif">
+
+                    <h2>Digital Camera</h2>
+
+                    <h3>★★☆☆☆ (48)</h3>
+
+                    <div class="price">
+                        ₹18,999
+                        <del>₹31,999</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 7 -->
+
+                <div class="Products">
+
+                    <button class="btn">
+                        15% OFF
+                    </button>
+
+                    <img src="image/e6.jfif">
+
+                    <h2>Wireless Keyboard</h2>
+
+                    <h3>★★★★☆ (87)</h3>
+
+                    <div class="price">
+                        ₹1,499
+                        <del>₹1,799</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 8 -->
+
+                <div class="Products">
+
+                    <button class="btn orange">
+                        30% OFF
+                    </button>
+
+                    <img src="image/e3.jfif">
+
+                    <h2>Tablet</h2>
+
+                    <h3>★★★☆☆ (59)</h3>
+
+                    <div class="price">
+                        ₹9,999
+                        <del>₹14,499</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 9 -->
+
+                <div class="Products">
+
+                    <button class="btn">
+                        25% OFF
+                    </button>
+
+                    <img src="image/e8.jfif">
+
+                    <h2>Power Bank</h2>
+
+                    <h3>★★★★☆ (121)</h3>
+
+                    <div class="price">
+                        ₹1,299
+                        <del>₹1,699</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 10 -->
+
+                <div class="Products">
+
+                    <button class="btn orange">
+                        45% OFF
+                    </button>
+
+                    <img src="image/e5.jfif">
+
+                    <h2>Computer Mouse</h2>
+
+                    <h3>★★☆☆☆ (41)</h3>
+
+                    <div class="price">
+                        ₹799
+                        <del>₹1,499</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 11 -->
+
+                <div class="Products">
+
+                    <button class="btn">
+                        20% OFF
+                    </button>
+
+                    <img src="image/e1.jfif">
+
+                    <h2> Earbuds</h2>
+
+                    <h3>★★★★☆ (92)</h3>
+
+                    <div class="price">
+                        ₹2,499
+                        <del>₹3,199</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- 12 -->
+
+                <div class="Products">
+
+                    <button class="btn orange">
+                        50% OFF
+                    </button>
+
+                    <img src="image/e11.jfif">
+
+                    <h2>USB Hub Adapter</h2>
+
+                    <h3>★★★☆☆ (52)</h3>
+
+                    <div class="price">
+                        ₹699
+                        <del>₹1,399</del>
+                    </div>
+
+                    <button class="cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+
+    <div class="bottom">
+
+        <button>
+            &lt;&lt; Previous
+        </button>
+
+        <button id="one">
+            1
+        </button>
+
+        <button style="width: 8%;">
+            Next &gt;&gt;
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+/* About Us Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7f9fc;
+    color: #17213b;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb {
+    padding: 18px 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.breadcrumb a {
+    color: #1769e0;
+    margin-right: 8px;
+}
+
+.breadcrumb span {
+    margin-right: 8px;
+}
+
+
+/* About Title */
+
+.about {
+    padding: 10px 0 50px;
+}
+
+.about-title {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.about-title span,
+.heading span,
+.customer-text span {
+    color: #ff7900;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.about-title h1 {
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.about-title h1 b,
+.heading h2 b {
+    color: #ff7900;
+}
+
+.about-title p {
+    color: #777;
+    font-size: 13px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* Company */
+
+.about-company {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 25px;
+    background: white;
+    padding: 25px;
+    border: 1px solid #e5e8ed;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    padding: 15px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.about-text a,
+.customer-text a {
+    display: inline-block;
+    background: #ff7900;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.about-text a:hover,
+.customer-text a:hover,
+.about-bottom a:hover {
+    background: #e66d00;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+
+
+/* Mission */
+
+.mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.mission-box {
+    background: white;
+    border: 1px solid #e5e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mission-box h2 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.mission-box p {
+    color: #777;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* Heading */
+
+.heading {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.heading h2 {
+    font-size: 25px;
+    margin: 4px 0;
+}
+
+.heading p {
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* Why Choose */
+
+.choose {
+    background: white;
+    border: 1px solid #e5e8ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.choose-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.choose-box {
+    text-align: center;
+    padding: 15px;
+}
+
+.choose-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 10px;
+}
+
+.choose-box h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.choose-box p {
+    color: #777;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* Statistics */
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #071c38;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+
+.stats div {
+    text-align: center;
+    border-right: 1px solid #34445b;
+}
+
+.stats div:last-child {
+    border: none;
+}
+
+.stats h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.stats p {
+    color: #c9d0da;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+
+/* Services */
+
+.services {
+    background: white;
+    border: 1px solid #e5e8ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.service {
+    border: 1px solid #e5e8ed;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.service > div {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.service p {
+    color: #777;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* Customer */
+
+.customer {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 25px;
+    background: white;
+    border: 1px solid #e5e8ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.customer-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+
+.customer-text {
+    padding: 15px;
+}
+
+.customer-text h2 {
+    font-size: 24px;
+    margin: 5px 0 12px;
+}
+
+.customer-text p {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+
+/* Team */
+
+.team {
+    background: white;
+    border: 1px solid #e5e8ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.team-box {
+    text-align: center;
+    border: 1px solid #e5e8ed;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.team-box img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.team-box h3 {
+    font-size: 13px;
+}
+
+.team-box p {
+    color: #777;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+
+/* Bottom */
+
+.about-bottom {
+    background: #071c38;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.about-bottom h2 {
+    font-size: 22px;
+}
+
+.about-bottom p {
+    color: #c9d0da;
+    font-size: 12px;
+    margin: 7px 0 15px;
+}
+
+.about-bottom a {
+    display: inline-block;
+    background: #ff7900;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+
+
+<body>
+<header>
+        <div id="head">
+            <div id="img">
+                <img src="logoalag.png" alt="logo" height="90px" width="266px" />
+            </div>
+            <div id="inp">
+                <input type="text" name="text" placeholder="Search For Products, Brands And More..." />
+                <select>
+                    <option value="all">All Categories</option>
+                    <option value="men">Mens Wear</option>
+                </select>
+                <div id="se">Search</div>
+            </div>
+
+            <div id="log">
+                
+                <a href="login.html"><i class="fa-regular fa-user" style="width: 18px;"></i>&nbsp;&nbsp;Login / Register</a><br>
+                <a href="" style="padding-top: 15px; font-size: 16.5px;">My Account&nbsp;&#9662;</a>
+            </div>
+            <div id="cart">
+                <div class="to"></div>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;My Cart <br> <span style="font-size: 16.5px;">&nbsp;<u style="color: yellow;">2 Items </u></span></a>
+            </div>
+            
+            </div>
+
+        <nav>
+            <div id="nav">
+                <div id="anchor">
+                    <a href="index.htm" class="ho-bo">Home</a>
+                    <a href="productnew.html" class="sec-bo">Products</a>
+                    <a href="Product.html" class="th-bo">Categories</a>
+                    <a href="about.html.html" class="fou-th">About Us</a>
+                    <a href="contactus.html" class="fif-bo">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+   <div id="container">
+
+
+    <main>
+
+        <h1 style="margin-top: 150px;">Shopping Cart <span>(2 Items)</span></h1>
+
+        <div id="cart-section" >
+
+            <!-- Left Cart -->
+            <div class="cart">
+
+                <div class="heading">
+                    <b>Product</b>
+                    <b>Price</b>
+                    <b>Quantity</b>
+                    <b>Total</b>
+                    <b>Action</b>
+                </div>
+
+
+                <!-- Product 1 -->
+                <div class="cart-item">
+
+                    <div class="product">
+                        <img src="imageofcart/laptop.png">
+
+                        <div>
+                            <h3>MacBook Air M2 Chip</h3>
+                            <p>13-inch, 8GB RAM, 256GB SSD</p>
+                        </div>
+                    </div>
+
+                    <b>₹89,990</b>
+
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+
+                    <b>₹89,990</b>
+
+                    <button class="delete">🗑</button>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="cart-item">
+
+                    <div class="product">
+                        <img src="imageofcart/headphone.jpeg">
+
+                        <div>
+                            <h3>Sony WH-1000XM5</h3>
+                            <p>Wireless Noise Cancelling Headphones</p>
+                        </div>
+                    </div>
+
+                    <b>₹24,990</b>
+
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+
+                    <b>₹24,990</b>
+
+                    <button class="delete">🗑</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Order Summary -->
+            <div class="summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal (3 items)</span>
+                    <b>₹114,980</b>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <b class="red">-₹3,000</b>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <b class="green">FREE</b>
+                </div>
+
+                <hr>
+
+                <div class="total">
+                    <h3>Total</h3>
+                    <h2>₹111,980</h2>
+                </div>
+
+                <button class="checkout">
+                    <a href="checkout.html" style="text-decoration: none; color: white;"> Proceed To Checkout</a>
+                   
+                </button>
+
+                <p class="continue">
+                    Continue Shopping
+                </p>
+
+            </div>
+
+        </div>
+        </main>
+
+
+        <!-- Recommended Products -->
+
+        <h2 class="like" style="margin-left: 35px;">You may also like</h2>
+
+        <div class="recommend" style="padding-bottom: 12px;">
+
+            <div class="card" style="margin-left: 35px;">
+
+                <img src="imageofcart/iphone.jpeg">
+
+                <h3>I Phone 15 pro</h3>
+                <p>Smartphone</p>
+
+                <p class="stars">★★★★★ (128)</p>
+
+                <b>₹90,999</b>
+
+                <br><br>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="imageofcart/bluetuth.jpeg">
+
+                <h3>boAt Rockerz 550</h3>
+                <p>Wireless bluetuth</p>
+
+                <p class="stars">★★★★★ (97)</p>
+
+                <b>₹1,499</b>
+
+                <br><br>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="imageofcart/shirt.jpeg">
+
+                <h3>U.S. Polo Assn.</h3>
+                <p>Men's Polo T-Shirt</p>
+
+                <p class="stars">★★★★★ (64)</p>
+
+                <b>₹899</b>
+
+                <br><br>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+        </div>
+        </div>
+
+    
+
+
+    <!-- Footer -->
+
+    
+    <footer>
+        <footer>
+        <div id="last-dv">
+            <div id="first-dv">
+                <img src="imageofcart/newlogo.png" alt="logo" height="80px" width="250px" />
+                <p style="padding-bottom: 25px; margin-top: -12px; margin-left: 85px; font-size: 16px;">Shop Smart. Live Better.</p>
+                <p>ShopEase is your one-stop destination</p>
+                <p style="margin-top: 8px;">For quality products at the best prices.</p>
+                <p style="margin-top: 8px;">Happy Shopping!</p>
+            </div>
+            <div id="f"></div>
+            <div id="second-dv">
+                <p style="font-size: 18.5px;">Quick Links</p>
+                <p style="font-size: 17px; padding-top: 13px;">Home</p>
+                <p style="font-size: 17px; padding-top: 8px;">Products</p>
+                <p style="font-size: 17px; padding-top: 8px;">Categories</p>
+                <p style="font-size: 17px; padding-top: 8px;">About Us</p>
+                <p style="font-size: 17px; padding-top: 8px;">Contact Us</p>
+                </div>
+            <div id="h"></div>
+            <div id="third-dv">
+                <p style="font-size: 18.5px;">Customer Service</p>
+                <p style="font-size: 17px; padding-top: 13px;">Login</p>
+                <p style="font-size: 17px; padding-top: 8px;">Register</p>
+                <p style="font-size: 17px; padding-top: 8px;">My Cart</p>
+                <p style="font-size: 17px; padding-top: 8px;">Track Order</p>
+                <p style="font-size: 17px; padding-top: 8px;">Help & Support</p>
+            </div>
+            <div id="g"></div>
+                <div id="fourth-dv">
+                <p style="font-size: 18.5px;">Information</p>
+                <p style="font-size: 17px; padding-top: 13px;">Privacy Policy</p>
+                <p style="font-size: 17px; padding-top: 8px;">Terms & Condition</p>
+                <p style="font-size: 17px; padding-top: 8px;">Shipping Policy</p>
+                <p style="font-size: 17px; padding-top: 8px;">Return Policy</p>
+                <p style="font-size: 17px; padding-top: 8px;">FAQ</p>
+            </div>
+            <div id="i"></div>
+            <div id="fifth-dv">
+                <p style="font-size: 18.5px;">Contact Us</p>
+                <p style="font-size: 16px; padding-top: 12px;"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;ShopEase Technologies Pvt.Ltd.</p>
+                <p style="padding-top: 5px; padding-left: 25px;">24, Digtal Avenue, Connaught Place</p>
+                <p style="padding-top: 5px; padding-left: 25px;">New Delhi - 110001, India</p>
+                <p style="padding-top: 14px;"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+91 9876543210</p>
+                <p style="padding-top: 8px;"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;support@shopease.example</p>
+                <p style="padding-top: 8px;"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;Mon - Sat: 10.00 AM - 7.00 PM</p>
+            </div>
+        </div>
+    </footer st>
+    <div id="bottom" style="grid-template-columns: 80% 20%;">
+    <div id="end">
+        <div style="color: white; font-size: 14px; padding-left: 40px; padding-top: 15px;">&copy; 2026 ShopEase Technologies Pvt.Ltd. All Rights Reserved.</div>
+    </div>
+    <div id="payment" style="float: left;">
+        <img src="imageofcart/payment icon.png" alt="">
+    </div>
+    </div>
+
+    </footer>
+</body>
+</html>

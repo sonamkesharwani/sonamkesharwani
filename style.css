@@ -1,0 +1,453 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+/* This Is Header CSS */
+header
+{
+    height: 545px;
+    width: 100%; 
+    background-color: rgb(209, 209, 235);
+}
+#head
+{
+    width: 100%;
+    height: 95px;
+    background-color: #0B1F3A;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+#img
+{
+    padding-left: 40px;
+    padding-top: 3px;
+}
+input
+{
+    height: 44px;
+    width: 360px;
+    padding-left: 18px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    padding-bottom: 1px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: 1px solid black;
+}
+#inp 
+{
+    margin-top: 26px;
+    display: flex;
+    margin-left: 95px;   
+}
+select
+{
+    height: 44.8px;
+    width: 120px;
+    background-color: white;
+    border: none;
+    margin-left: -30px;
+    padding-bottom: 15px;
+    padding-top: 7px;
+    font-size: 14.5px;
+    margin-top: 0.8px;
+}
+#se
+{
+    height: 33px;
+    width: 100px;
+    background-color: #FF7A00;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    padding-top: 12px;
+    border: none;
+    margin-top: 0.8px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+#log
+{
+    margin-left: 130px;
+    margin-top: 25px; 
+}
+#log a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 17.5px;
+}
+#cart 
+{
+    margin-left: 50px;
+    margin-top: 25px;
+    display: flex;
+}
+.to
+{
+    height: 45px;
+    width: 36px;
+    border-left: 1px solid white;
+    opacity: 0.5;
+}
+#cart a 
+{
+    text-decoration: none;
+    color: white;
+    font-size: 17.5px;
+    margin-left: 20px;
+}
+#nav
+{
+    height: 50px;
+    width: 100%;
+    background-color: #0B1F3A;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);  
+    position: fixed;
+    top: 95px;
+}
+#anchor
+{
+    margin-left: 32px;
+    padding-top: 14px;  
+}
+
+#anchor a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 30px;
+}
+/* This Is Hero Section CSS*/
+#hero-img
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+#hero-img
+{
+    height: 380px;
+    width: 100%;
+    background-image: url(heropic.png);
+    background-size: cover;
+}
+#hero
+{
+    margin-top: 145px;
+}
+#things
+{
+    padding-top: 80px;
+    margin-left: 60px;
+}
+.ho-bo
+{
+    transition: all 0.7s ease-in;
+}
+.ho-bo:hover{
+    border-bottom: 2px solid #FF7A00;
+    border-radius: 2px;
+}
+.sec-bo
+{
+    transition: all 0.7s ease-in;
+}
+.sec-bo:hover
+{
+    border-bottom: 2px solid #FF7A00;
+    border-radius: 2px;
+}
+.th-bo
+{
+    transition: all 0.7s ease-in;
+}
+.th-bo:hover
+{
+    border-bottom: 2px solid #FF7A00;
+    border-radius: 2px;
+}
+.fou-th
+{
+    transition: all 0.7s ease-in;
+}
+.fou-th:hover
+{
+    border-bottom: 2px solid #FF7A00;
+    border-radius: 2px;
+}
+.fif-bo
+{
+    transition: all 0.7s ease-in;
+}
+.fif-bo:hover
+{
+    border-bottom: 2px solid #FF7A00;
+    border-radius: 2px;
+}
+.ft-go
+{
+    transition: all 0.7s ease-in;
+}
+.ft-go:hover
+{
+    border-bottom: 2px solid #FF7A00;
+    border-radius: 2px;
+}
+#things h1
+{
+    color: white;
+    font-size: 40px;   
+}
+#things h2
+{
+    color: #FF7A00;
+    font-size: 39px;
+    padding-top: 3px;
+}
+#things p
+{
+    color: white;
+    font-size: 17px;
+    padding-top: 10px;  
+}
+#btns
+{
+    margin-top: 18px;
+}
+#btn-1
+{
+    height: 45px;
+    width: 135px;
+    background-color: #FF7A00;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 2px;
+    border-radius: 8px;
+    transition: all 1s ease-in;
+}
+#btn-1:hover
+{
+    background-color: transparent;
+    border: 1px solid white;
+}
+#btn-2
+{
+    margin-left: 18px;
+    height: 45px;
+    width: 150px;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 1s ease-in;
+}
+#btn-2:hover
+{
+    background-color: #FF7A00;
+    border: none;
+}
+/* This Is Main Section CSS*/  
+main
+{
+    min-height: 600px;
+    width: 100%;
+    background-color: rgb(209, 209, 235);
+    margin-top: -155px;
+}
+#images
+{
+    margin-left: 2px;
+    margin-top: 18px;
+    display: flex;
+    cursor: pointer;
+}
+#img-1
+{
+    height: 215px;
+    width: 195px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 18px;
+    border: 1px solid white;
+    transition: all 0.8s ease-in;
+}
+#img-1:hover
+{
+    margin-top: -7px;
+    box-shadow: 4px 4px 12px blue;
+}
+#img-1 img{
+    margin-left: 19px;
+    margin-top: 9px;
+}
+#img-1 p{
+    color: #0B1F3A;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1px;
+}
+
+/* This Is Main Next Section CSS*/
+#main-alag
+{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(209, 209, 235)
+}
+#img-next
+{
+    margin-left: 22px;
+}
+#product
+{
+    height: 320px;
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12%;
+    margin-top: -450px;
+    margin-left: -200px;
+    padding: 20px;
+    gap: 30px;
+}
+#first-p 
+{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+}
+#main-first
+{
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 15px;
+    margin-top: 55px;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+#main-first:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px blueviolet;
+}
+
+/* This Is Footer Section CSS*/
+footer
+{
+    height: 290px;
+    width: 100%;
+    background-color: #0B1F3A;
+    cursor: pointer;
+}
+#end
+{
+    height: 50px;
+    width: 100%;
+    background-color: #0B1F3A;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+#first-dv
+{
+    padding-top: 35px;
+    margin-left: 55px;
+}
+#first-dv p
+{
+    font-size: 17px;
+    color: white;
+}
+#second-dv
+{
+    margin-top: 60px;
+}
+#second-dv p
+{
+    color: white;
+    margin-left: 55px;   
+}
+#third-dv p
+{
+    color: white;
+    margin-left: 55px;
+}
+#third-dv
+{
+    color: white;
+    margin-top: 60px;
+}
+#fourth-dv p
+{
+    color: white;
+    margin-left: 55px;
+}
+#fourth-dv
+{
+    margin-top: 60px;
+}
+#last-dv
+{
+    display: flex;
+}
+#fifth-dv
+{
+    margin-top: 60px;
+}
+#fifth-dv p
+{
+    color: white;
+    margin-left: 28px;
+}
+#f
+{
+    height: 185px;
+    width: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 50px;
+    margin-top: 56px;
+}
+#h
+{
+    height: 185px;
+    width: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 70px;
+    margin-top: 56px;
+}
+#g
+{
+    height: 185px;
+    width: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 70px;
+    margin-top: 56px;
+}
+#i
+{
+    height: 185px;
+    width: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 45px;
+    margin-top: 56px;
+}
+#payment img
+{
+    background-color: #b9c7da;
+    float: left;
+    width: 215px;
+    height: 50px;
+    position: absolute;
+    right: 2px;
+    border-radius: 2px; 
+}
